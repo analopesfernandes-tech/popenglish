@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopEnglish</title>
+    <link rel="icon" href="Poppop.ico" type="image/x-icon">
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+
+<div class="form-container">
+    <div class="crie"><h1>Crie sua conta</h1></div>
+
+    <form id="form" class="form-grid">
+        <input id="nomecompleto" type="text" placeholder="Nome Completo" required><br><br>
+
+        <div>
+            <label class="section-title">Gênero</label>
+            <div class="radio-group">
+                <label><input type="radio" name="genero" value="Masculino" required> Masculino</label>
+                <label><input type="radio" name="genero" value="Feminino"> Feminino</label>
+                <label><input type="radio" name="genero" value="Outro"> Outro</label>
+            </div>
+        </div>
+
+        <input id="cidade" type="text" placeholder="Cidade" required>
+        <input id="pais" type="text" placeholder="País" required>
+        <input id="email" type="email" placeholder="E-mail" required>
+
+        <div class="full-width">
+            <button type="submit">Registrar</button>
+        </div>
+    </form>
+</div>
+<script src="registro.js" defer></script>
+</body>
+</html>

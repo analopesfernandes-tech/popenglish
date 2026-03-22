@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 10px;
+    background-color: #fff04d;
+    overflow-x: hidden;
+
+}
+
+.logo {
+    font-weight: bolder;
+    width: 20%;
+    background-color: #4DA6FF;
+    padding: 15px 20px;
+    border: 3px solid black;
+    box-shadow: 6px 8px 0 black;
+    text-align: center;
+    font-size: 40px;
+    margin-right: auto;
+    transform: rotate(-3deg);
+
+}
+
+
+.menu {
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 6px 8px 0 black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 40px;
+
+
+}
+
+.hamburger {
+    padding: 8px;
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 2px;
+    background: black;
+    display: block;
+    border: 2px solid black;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 22px;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: 0.2s ease;
+
+
+}
+
+/* hover */
+
+.nav-links a:hover {
+    border: 3px solid black;
+    box-shadow: 6px 6px 0 black;
+    background: white;
+}
+
+.login-btn {
+    background: #ff2f7d;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 12px 16px;
+    border: 3px solid black;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 6px 6px 0 black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.2s;
+
+
+}
+
+/* Hover */
+
+.login-btn:hover {
+    box-shadow: 9px 9px 0 black;
+    transform: scale(1.05);
+}
+
+/* Clique */
+.login-btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 2px 2px 0 black;
+}
+
+
+
+.chamada {
+    color: rgb(0, 0, 0);
+    font-size: clamp(28px, 5vw, 30px);
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 80px 20px 20px;
+
+
+}
+
+.highlight1 {
+    color: #ff2f7d;
+}
+
+.highlight2 {
+    color: #4DA6FF;
+}
+
+.intro {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1, 8;
+    color: rgb(0, 0, 0);
+    margin: 10px 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #ff2f7d;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 15px 18px;
+    border: 3px solid black;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 6px 6px 0 black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.2s ease;
+
+}
+
+/* Hover */
+
+.cta-btn:hover {
+    box-shadow: 9px 9px 0 black;
+    transform: scale(1.05);
+}
+
+/* Clique */
+.cta-btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 2px 2px 0 black;
+}
+
+
+/* centraliza a caixa */
+
+#sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* caixa */
+
+.sobre {
+    background-color: aliceblue;
+    border: 5px solid black;
+    box-shadow: 12px 12px 0 black;
+    width: 90%;
+    max-width: 900px;
+    padding: 60px;
+    position: relative;
+    text-align: center;
+    margin: 100px auto;
+}
+
+/* barra da janela */
+
+.sobre::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: -5px;
+    width: 100%;
+    height: 40px;
+    background-color: aliceblue;
+    border: 5px solid black;
+}
+
+/* bolinhas */
+
+.sobre::after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    width: 14px;
+    height: 14px;
+    background: #ff5f57;
+    border-radius: 50%;
+    box-shadow:
+        25px 0 #ffbd2e,
+        50px 0 #28c840;
+}
+
+/* título */
+
+.title-sobre h1 {
+    font-size: 42px;
+    margin-top: -10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* texto */
+
+.sobre h3 {
+    text-align: justify;
+    line-height: 1.7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    margin-top: 70px;
+
+}
+
+/* link */
+
+.linkquizz {
+    display: inline-block;
+    color: #ff2f7d;
+    text-decoration: none;
+    font-weight: 800;
+    transition: transform 0.2s ease;
+}
+
+.linkquizz:hover {
+    transform: scale(1.03);
+}
+
+.footer {
+    background: black;
+    color: white;
+    padding: 25px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+}
+
+/* texto */
+
+.footer-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+
+}
+
+.footer-text p {
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+/* icones */
+
+.social-icons {
+    display: flex;
+    gap: 25px;
+}
+
+/* estilo brutalista */
+
+.icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s ease;
+}
+
+.icon img {
+    width: 50px;
+
+}
+
+
+/* cores */
+
+.youtube {
+    background: #ff3b00;
+}
+
+.instagram {
+    background: #ff007a;
+}
+
+/* hover */
+
+.icon:hover {
+    transform: translateY(-4px) scale(1.05);
+}
+
+
+/* parte inferior */
+
+.footer-bottom {
+    border-top: 1px solid #6d6c6c;
+    margin-top: 60px;
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    color: aliceblue
+}
+
+/* MOBILE */
+
+@media(max-width: 1024px) {
+
+    .logo {
+        width: auto;
+        max-width: 220px;
+        font-size: 24px;
+        padding: 10px 15px;
+
+    }
+
+    .menu {
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .navbar {
+        flex-direction: row;
+        display: none;
+        gap: 15px;
+
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 10px;
+        font-size: 16px;
+        padding: 5px 10px;
+
+    }
+
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1000;
+    }
+
+    /* menu escondido */
+    #navMenu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 20px;
+        top: 80px;
+        width: 100%;
+        background: aliceblue;
+        margin-top: 10px;
+        padding: 15px;
+        border: 3px solid black;
+        width: 200px;
+        z-index: 999;
+    }
+
+
+    /* menu aberto */
+    #navMenu.active {
+        display: flex;
+    }
+
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* botão */
+    .login-btn {
+        text-align: center;
+    }
+
+    .chamada {
+        font-size: 20px;
+        margin: 70px 10px;
+    }
+
+    .intro {
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .cta-btn {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .sobre {
+        padding: 25px;
+        max-width: 500px;
+    }
+
+    .title-sobre h1 {
+        font-size: 28px;
+    }
+
+    .sobre h3 {
+        font-size: 16px;
+        margin-top: 40px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-text h2 {
+        font-size: 25px;
+    }
+
+    .footer-text p {
+        font-size: 16px;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon img {
+        width: 35px;
+    }
+
+}
