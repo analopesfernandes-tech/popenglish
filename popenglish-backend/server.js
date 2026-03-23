@@ -82,6 +82,19 @@ app.post("/users/login", (req, res) => {
 });
 
 /* =========================
+LISTAR USUÁRIOS
+========================= */
+
+app.get("/users", (req, res) => {
+    db.query("SELECT * FROM users", (err, result) => {
+        if(err){
+            return res.status(500).send("Erro");
+        }
+        res.json(result);
+    });
+});
+
+/* =========================
 SERVER
 ========================= */
 
