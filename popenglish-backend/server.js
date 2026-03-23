@@ -9,6 +9,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.send("Backend funcionando 🚀");
+});
+
 const db = mysql.createConnection(process.env.DATABASE_URL);
 
 db.connect(err => {
