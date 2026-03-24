@@ -10,20 +10,23 @@ document.getElementById("nivel").textContent =
 `Nível estimado: ${nivel}`;
 
 
-// 🔥 NOVO: mensagem motivadora
+// 🔥 NOVO: mensagem motivadora 
 let mensagem = "";
 
-if(nivel === "Básico"){
-    mensagem = "Todo mundo começa do zero — você já deu o primeiro passo 👏 Continue e você vai evoluir rápido!";
+if(nivel === "A1"){
+    mensagem = "Todo mundo começa do zero - você já deu o primeiro passo. 🚀 Em poucos dias você já verá evolução.";
 }
-else if(nivel === "Intermediário"){
-    mensagem = "Você já consegue se comunicar! Agora é hora de ganhar fluidez 💪";
+else if(nivel === "A2"){
+    mensagem = "Você já tem uma base! Agora é hora de ganhar confiança 💪";
 }
-else if(nivel === "Avançado"){
-    mensagem = "Seu inglês está forte! Vamos refinar e chegar na fluência 🔥";
+else if(nivel === "B1"){
+    mensagem = "Você já consegue se comunicar bem! Vamos melhorar a fluidez 🔥";
+}
+else if(nivel === "B2"){
+    mensagem = "Seu inglês está forte! Agora é só lapidar para alcançar a fluência 🚀";
 }
 else{
-    mensagem = "Continue praticando todos os dias 🚀";
+    mensagem = "Continue praticando todos os dias 👏";
 }
 
 // 🔥 MOSTRAR NA TELA
