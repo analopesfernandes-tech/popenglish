@@ -14,7 +14,7 @@ document.getElementById("nivel").textContent =
 let mensagem = "";
 
 if(nivel === "A1"){
-    mensagem = "Todo mundo começa do zero - você já deu o primeiro passo. 🚀 Em poucos dias você já verá evolução.";
+    mensagem = "Todo mundo começa do zero. Em poucos dias de prática você já verá evolução  🚀 ";
 }
 else if(nivel === "A2"){
     mensagem = "Você já tem uma base! Agora é hora de ganhar confiança 💪";
@@ -31,6 +31,30 @@ else{
 
 // 🔥 MOSTRAR NA TELA
 document.getElementById("mensagem").textContent = mensagem;
+
+//Barra de nível
+
+const barra = document.getElementById("barra");
+
+let porcentagem = (score / 12) * 100;
+
+setTimeout(() => {
+  barra.style.width = porcentagem + "%";
+}, 200);
+
+// 🎨 cor por nível
+if(nivel === "A1"){
+  barra.style.background = "#f01818ff";
+}
+else if(nivel === "A2"){
+  barra.style.background = "#ffc400ff";
+}
+else if(nivel === "B1"){
+  barra.style.background = "#ffe100ff";
+}
+else{
+  barra.style.background = "#1adc20ff";
+}
 
 
 
