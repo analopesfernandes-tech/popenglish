@@ -304,6 +304,7 @@ body {
 
 .social-icons {
     display: flex;
+    justify-content: center;
     gap: 25px;
 }
 
@@ -312,6 +313,7 @@ body {
 .icon {
     width: 70px;
     height: 70px;
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -322,6 +324,8 @@ body {
 
 .icon img {
     width: 50px;
+    height: 50px;
+    object-fit: contain;
 
 }
 
@@ -329,11 +333,11 @@ body {
 /* cores */
 
 .youtube {
-    background: #ff3b00;
+    background: #ff0d00;
 }
 
 .instagram {
-    background: #ff007a;
+    background: #fa03d1;
 }
 
 /* hover */
