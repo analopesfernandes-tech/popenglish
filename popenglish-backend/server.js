@@ -29,7 +29,10 @@ REGISTER
 
 app.post("/users/register", (req, res) => {
 
-    const { nomecompleto, genero, cidade, pais, email } = req.body;
+    let { nomecompleto, genero, cidade, pais, email } = req.body;
+
+    // normalizar email (IMPORTANTE)
+    email = email.toLowerCase().trim();
 
     const sql = `
         INSERT INTO users (nomecompleto, genero, cidade, pais, email)
@@ -39,11 +42,23 @@ app.post("/users/register", (req, res) => {
     db.query(sql, [nomecompleto, genero, cidade, pais, email], (err, result) => {
 
         if(err){
+
+            // TRATAMENTO DO EMAIL DUPLICADO
+            if(err.code === "ER_DUP_ENTRY"){
+                return res.status(400).json({
+                    message: "Este email já está cadastrado"
+                });
+            }
+
             console.log(err);
-            return res.status(500).send("Erro");
+            return res.status(500).json({
+                message: "Erro no servidor"
+            });
         }
 
-        res.send("Usuário cadastrado");
+        res.status(201).json({
+            message: "Usuário cadastrado com sucesso"
+        });
     });
 
 });
@@ -54,7 +69,11 @@ LOGIN
 
 app.post("/users/login", (req, res) => {
 
-    const { email } = req.body;
+    let { email } = req.body;
+
+    // NORMALIZAÇÃO 
+    
+    email = email.toLowerCase().trim();
 
     const sql = "SELECT * FROM users WHERE email = ?";
 
