@@ -38,12 +38,12 @@ nivelElemento.innerText = `Seu nível: ${nivel}`;
 
 // botão começar lição
 document.getElementById("startLesson").addEventListener("click", () => {
-    window.location.href = "lesson1.html";
+    window.location.href = "lessons/lesson1.html";
 });
 
 // botão fazer quiz
 document.getElementById("startQuiz").addEventListener("click", () => {
-    window.location.href = "quiz1.html";
+    window.location.href = "quizzes/quiz1.html";
 });
 
 /* LOGOUT */
