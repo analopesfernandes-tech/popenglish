@@ -52,3 +52,9 @@ document.getElementById("logout").addEventListener("click", () => {
     localStorage.removeItem("user");
     window.location.href = "login.html";
 });
+
+const progresso = localStorage.getItem("lesson1Completed");
+
+if(progresso === "true"){
+    console.log("Lição 1 concluída");
+}
