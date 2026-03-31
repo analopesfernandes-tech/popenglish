@@ -43,10 +43,21 @@
 
             <div class="full-width">
                 <button type="submit">Registrar</button>
+                <p class="login-link">Já é cadastrado? <a href="login.html">Entrar</a></p>
             </div>
         </form>
     </div>
     <script src="registro.js?v=2" defer></script>
+
+    <div id="popupErro" class="popup hidden">
+  <div class="popup-content">
+    <h2>⚠️ Ops!</h2>
+    <p id="mensagemErro"></p>
+    
+
+    <button onclick="fecharPopup()" class="btn">OK</button>
+  </div>
+</div>
 </body>
 
 </html>
