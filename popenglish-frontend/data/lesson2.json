@@ -1,0 +1,53 @@
+{
+  "title": "Lesson 2: Introductions",
+  "sections": [
+    {
+      "type": "text",
+      "content": "Depois de cumprimentar alguém, o próximo passo é se apresentar."
+    },
+    {
+      "type": "text",
+      "content": "I am Ana"
+    },
+    {
+      "type": "text",
+      "content": "My name is Ana"
+    },
+    {
+      "type": "text",
+      "content": "I am from Brazil"
+    },
+
+     {
+      "type": "warning",
+      "content": "Erro comum: ❌ I have 25 years → ✅ I am 25 years old"
+    },
+
+    {
+      "type": "title",
+      "content": "Mini prática"
+    },
+
+    {
+      "type": "text",
+      "content": "Tente responder:"
+    },
+    {
+      "type": "text",
+      "content": "1. What’s your name?"
+    },
+    {
+      "type": "text",
+      "content": "2. Where are you from?"
+    },
+    {
+      "type": "text",
+      "content": "3. What do you do?"
+    },
+
+    {
+      "type": "text",
+      "content": "Exemplo: I’m Ana. I’m from Brazil. I’m a student."
+    }
+  ]
+}
