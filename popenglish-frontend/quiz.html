@@ -13,126 +13,42 @@
 
         gtag('config', 'G-22RPMRWV3T');
     </script>
-    <title>PopEnglish Level Test</title>
+
+
+    <title>Lesson 2: Introductions</title>
     <link rel="icon" type="ico" href="assets/icons/Poppop.ico">
-    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="css/quiz.css">
 </head>
 
+ <!-- Quiz geral em HTML para ser usado com JSON -->
 <body>
 
-    <section class="quiz-page">
+    <div class="quiz-window">
 
-        <div class="quiz-window">
+        <h1 id="title">Carregando...</h1>
 
-            <h1>Teste seu nível de inglês</h1>
+        <form id="quizForm"></form>
 
-            <form class="quiz-form">
+        <button type="button" class="verificarquiz" onclick="verificarQuiz()">
+            Verificar respostas
+        </button>
 
-                <div class="question">
-                    <p>1. I ___ from Brazil.</p>
-                    <label><input type="radio" name="q1" value="am"> am</label>
-                    <label><input type="radio" name="q1" value="is"> is</label>
-                    <label><input type="radio" name="q1" value="are"> are</label>
-                    <label><input type="radio" name="q1" value="be"> be</label>
-                </div>
+    </div>
 
-                <div class="question">
-                    <p>2. She ___ coffee every morning.</p>
-                    <label><input type="radio" name="q2" value="drink"> drink</label>
-                    <label><input type="radio" name="q2" value="drinks"> drinks</label>
-                    <label><input type="radio" name="q2" value="drinking"> drinking</label>
-                    <label><input type="radio" name="q2" value="drank"> drank</label>
-                </div>
+    <!-- POPUP -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <h2 id="popupTitle"></h2>
+            <p id="popupMessage"></p>
 
-                <div class="question">
-                    <p>3. What time ___ you wake up?</p>
-                    <label><input type="radio" name="q3" value="do"> do</label>
-                    <label><input type="radio" name="q3" value="does"> does</label>
-                    <label><input type="radio" name="q3" value="are"> are</label>
-                    <label><input type="radio" name="q3" value="is"> is</label>
-                </div>
-
-                <div class="question">
-                    <p>4. Yesterday I ___ to the gym.</p>
-                    <label><input type="radio" name="q4" value="go"> go</label>
-                    <label><input type="radio" name="q4" value="went"> went</label>
-                    <label><input type="radio" name="q4" value="going"> going</label>
-                    <label><input type="radio" name="q4" value="goes"> goes</label>
-                </div>
-
-                <div class="question">
-                    <p>5. There ___ many people in the room.</p>
-                    <label><input type="radio" name="q5" value="is"> is</label>
-                    <label><input type="radio" name="q5" value="are"> are</label>
-                    <label><input type="radio" name="q5" value="was"> was</label>
-                    <label><input type="radio" name="q5" value="be"> be</label>
-                </div>
-
-                <div class="question">
-                    <p>6. She is interested ___ learning languages.</p>
-                    <label><input type="radio" name="q6" value="on"> on</label>
-                    <label><input type="radio" name="q6" value="in"> in</label>
-                    <label><input type="radio" name="q6" value="at"> at</label>
-                    <label><input type="radio" name="q6" value="for"> for</label>
-                </div>
-
-                <div class="question">
-                    <p>7. If I had more time, I ___ travel more.</p>
-                    <label><input type="radio" name="q7" value="will"> will</label>
-                    <label><input type="radio" name="q7" value="would"> would</label>
-                    <label><input type="radio" name="q7" value="can"> can</label>
-                    <label><input type="radio" name="q7" value="do"> do</label>
-                </div>
-
-                <div class="question">
-                    <p>8. I have lived here ___ 2019.</p>
-                    <label><input type="radio" name="q8" value="for"> for</label>
-                    <label><input type="radio" name="q8" value="since"> since</label>
-                    <label><input type="radio" name="q8" value="during"> during</label>
-                    <label><input type="radio" name="q8" value="from"> from</label>
-                </div>
-
-                <div class="question">
-                    <p>9. He suggested ___ earlier.</p>
-                    <label><input type="radio" name="q9" value="leave"> leave</label>
-                    <label><input type="radio" name="q9" value="leaving"> leaving</label>
-                    <label><input type="radio" name="q9" value="to leave"> to leave</label>
-                    <label><input type="radio" name="q9" value="left"> left</label>
-                </div>
-
-                <div class="question">
-                    <p>10. She speaks English very ___.</p>
-                    <label><input type="radio" name="q10" value="fluent"> fluent</label>
-                    <label><input type="radio" name="q10" value="fluently"> fluently</label>
-                    <label><input type="radio" name="q10" value="fluency"> fluency</label>
-                    <label><input type="radio" name="q10" value="more fluent"> more fluent</label>
-                </div>
-
-                <div class="question">
-                    <p>11. Hardly ___ the meeting started when the power went out.</p>
-                    <label><input type="radio" name="q11" value="had"> had</label>
-                    <label><input type="radio" name="q11" value="has"> has</label>
-                    <label><input type="radio" name="q11" value="did"> did</label>
-                    <label><input type="radio" name="q11" value="was"> was</label>
-                </div>
-
-                <div class="question">
-                    <p>12. The project was cancelled due ___ budget issues.</p>
-                    <label><input type="radio" name="q12" value="for"> for</label>
-                    <label><input type="radio" name="q12" value="to"> to</label>
-                    <label><input type="radio" name="q12" value="with"> with</label>
-                    <label><input type="radio" name="q12" value="by"> by</label>
-                </div>
-
-
-                <button class="verificarquiz" type="button" onclick="verificarQuiz()">Ver resultado</button>
-                <div id="resultado"></div>
-            </form>
-
+            <div class="popup-buttons">
+                <button id="nextBtn">Próxima lição</button>
+                <button id="retryBtn">Refazer quiz</button>
+            </div>
         </div>
+    </div>
 
-    </section>
-    <script src="quiz.js"></script>
+    <script src="data/quiz.js" defer></script>
 
 </body>
 

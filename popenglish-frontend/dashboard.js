@@ -37,9 +37,9 @@ nivelElemento.innerText = `Seu nível: ${nivel}`;
 
 
 // botão começar lição
-document.getElementById("startLesson").addEventListener("click", () => {
-    window.location.href = "lessons/lesson1.html";
-});
+document.getElementById("btnLesson").onclick = () => {
+  window.location.href = "lesson.html?id=lesson1";
+};
 
 // botão fazer quiz
 document.getElementById("startQuiz").addEventListener("click", () => {
