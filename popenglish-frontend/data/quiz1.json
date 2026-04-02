@@ -1,12 +1,12 @@
 {
   "title": "Teste seu conhecimento",
-  "lessonId": "lesson2",
-  "nextLesson": "../lessons/lesson2.html",
+  "lessonId": "lesson1",
+  "nextLesson": "lesson.html?id=lesson2",
   "questions": [
     {
-      "question": "Teste",
-      "options": ["teste"],
-      "correct": "teste"
+      "question": "Como dizer \"Oi\" em inglês?",
+      "options": ["bye","hy","hi","rai"],
+      "correct": "hi"
     },
     {
       "question": "Qual é a maneira mais neutra de se dizer \"Olá\" em inglês?",

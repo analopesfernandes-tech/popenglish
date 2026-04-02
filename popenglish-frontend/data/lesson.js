@@ -46,12 +46,16 @@ fetch(`data/${lessonId}.json`)
 
         });
 
+      
         // 👉 botão para quiz
         const btnQuiz = document.getElementById("btnQuiz");
 
         btnQuiz.onclick = () => {
-            window.location.href = `quiz.html?id=${lessonId}`;
+
+            const lessonNumber = lessonId.replace("lesson", "");
+            const quizId = `quiz${lessonNumber}`;
+
+            window.location.href = `quiz.html?id=${quizId}`;
         };
 
     })
-    .catch(err => console.log("Erro:", err));
