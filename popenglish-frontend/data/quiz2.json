@@ -1,0 +1,67 @@
+{
+  "title": "Teste seu conhecimento",
+  "lessonId": "lesson2",
+  "nextLesson": "../lessons/lesson2.html",
+  "questions": [
+    {
+      "question": "Teste",
+      "options": ["teste"],
+      "correct": "teste"
+    },
+    {
+      "question": "Qual é a maneira mais neutra de se dizer \"Olá\" em inglês?",
+      "options": ["holla", "hi", "hey", "hello"],
+      "correct": "hello"
+    },
+    {
+      "question": "Como você diria \"Boa noite\" ao entrar em uma loja às 19:00?",
+      "options": ["good morning", "good afternoon", "good evening", "good night"],
+      "correct": "good evening"
+    },
+    {
+      "question": "Ao sair do trabalho às 22:00, como você diz \"Boa noite\"?",
+      "options": ["good night", "good afternoon", "good evening", "good morning"],
+      "correct": "good night"
+    },
+    {
+      "question": "Como escrever \"Olá, bom dia\" em uma mensagem para seu chefe?",
+      "options": ["hey, good morning", "hello, good night", "hello, good morning", "hi, good afternoon"],
+      "correct": "hello, good morning"
+    },
+    {
+      "question": "Qual dessas opções você usaria ao sair de um lugar à noite?",
+      "options": ["good morning", "good night", "good evening", "good afternoon"],
+      "correct": "good night"
+    },
+    {
+      "question": "Qual a diferença entre \"Hi\" e \"Hello\"?",
+      "options": ["hi é mais formal", "hello é mais formal", "hi se diz de noite", "hello se diz pela manhã"],
+      "correct": "hello é mais formal"
+    },
+    {
+      "question": "Como você diz \"Olá, bom dia\" informalmente?",
+      "options": ["hi, good morning", "hi, good afternoon", "hello, good morning", "hi, good morney"],
+      "correct": "hi, good morning"
+    },
+    {
+      "question": "Quando se usa \"Good evening\" corretamente?",
+      "options": [
+        "quando chego em algum lugar ao anoitecer",
+        "depois das 22:00",
+        "quando me despeço de alguém ao anoitecer",
+        "quando cumprimento alguém ao amanhecer"
+      ],
+      "correct": "quando chego em algum lugar ao anoitecer"
+    },
+    {
+      "question": "Como se escreve \"Olá, boa tarde\" corretamente?",
+      "options": [
+        "hello, god afternoon",
+        "hello, good afternoon",
+        "hello, good afernoon",
+        "holla, good afternon"
+      ],
+      "correct": "hello, good afternoon"
+    }
+  ]
+}
