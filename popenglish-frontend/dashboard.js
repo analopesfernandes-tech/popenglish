@@ -46,12 +46,13 @@ document.getElementById("startQuiz").addEventListener("click", () => {
     window.location.href = "quizzes/quiz1.html";
 });
 
+
 /* LOGOUT */
 
-document.getElementById("logout").addEventListener("click", () => {
-    localStorage.removeItem("user");
-    window.location.href = "login.html";
-});
+document.getElementById("logout").onclick = () => {
+  localStorage.clear(); // limpa progresso/login
+  window.location.href = "index.html";
+};
 
 const progresso = localStorage.getItem("lesson1Completed");
 
