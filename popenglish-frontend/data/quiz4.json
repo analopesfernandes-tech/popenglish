@@ -1,0 +1,77 @@
+{
+  "title": "Quiz 4: Pronouns",
+  "lessonId": "lesson4",
+  "nextLesson": "lesson.html?id=lesson5",
+  "questions": [
+    {
+      "question": "Qual pronome usamos para 'ela'?",
+      "options": ["He", "She", "They", "We"],
+      "correct": "She"
+    },
+    {
+      "question": "Qual pronome usamos para 'eles'?",
+      "options": ["We", "They", "He", "I"],
+      "correct": "They"
+    },
+    {
+      "question": "Complete: ___ is happy (ela)",
+      "options": ["He", "They", "She", "We"],
+      "correct": "She"
+    },
+    {
+      "question": "Complete: ___ are students (eles)",
+      "options": ["He", "She", "They", "I"],
+      "correct": "They"
+    },
+    {
+      "question": "Complete: ___ am Ana",
+      "options": ["She", "They", "I", "We"],
+      "correct": "I"
+    },
+    {
+      "question": "Qual frase está correta?",
+      "options": [
+        "She are happy",
+        "She is happy",
+        "She am happy",
+        "She be happy"
+      ],
+      "correct": "She is happy"
+    },
+    {
+      "question": "Qual frase está correta?",
+      "options": [
+        "They is students",
+        "They am students",
+        "They are students",
+        "They be students"
+      ],
+      "correct": "They are students"
+    },
+    {
+      "question": "Qual frase está errada?",
+      "options": [
+        "We are friends",
+        "He is a teacher",
+        "They are happy",
+        "He are a teacher"
+      ],
+      "correct": "He are a teacher"
+    },
+    {
+      "question": "Como dizer 'Nós somos amigos'?",
+      "options": [
+        "We is friends",
+        "We are friends",
+        "We am friends",
+        "We be friends"
+      ],
+      "correct": "We are friends"
+    },
+    {
+      "question": "Qual pronome substitui 'Ana'?",
+      "options": ["He", "She", "They", "We"],
+      "correct": "She"
+    }
+  ]
+}

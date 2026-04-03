@@ -20,26 +20,26 @@ fetch(`data/${lessonId}.json`)
 
             if (section.type === "text") {
                 const p = document.createElement("p");
-                p.innerText = section.content;
+                p.innerHTML = section.content;
                 contentDiv.appendChild(p);
             }
 
             if (section.type === "title") {
                 const h3 = document.createElement("h3");
-                h3.innerText = section.content;
+                h3.innerHTML = section.content;
                 contentDiv.appendChild(h3);
             }
 
             if (section.type === "tip") {
                 const p = document.createElement("p");
-                p.innerText = "💡 " + section.content;
+                p.innerHTML = "💡 " + section.content;
                 p.style.fontWeight = "bold";
                 contentDiv.appendChild(p);
             }
 
             if (section.type === "warning") {
                 const p = document.createElement("p");
-                p.innerText = "⚠️ " + section.content;
+                p.innerHTML = "⚠️ " + section.content;
                 p.style.color = "red";
                 contentDiv.appendChild(p);
             }

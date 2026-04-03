@@ -1,0 +1,92 @@
+{
+  "title": "Quiz 3: Verb to Be",
+  "lessonId": "lesson3",
+  "nextLesson": "lesson.html?id=lesson4",
+  "questions": [
+    {
+      "question": "Complete: I ___ a student",
+      "options": ["is", "are", "am", "be"],
+      "correct": "am"
+    },
+    {
+      "question": "Complete: She ___ happy",
+      "options": ["am", "are", "is", "be"],
+      "correct": "is"
+    },
+    {
+      "question": "Complete: They ___ students",
+      "options": ["am", "is", "are", "be"],
+      "correct": "are"
+    },
+    {
+      "question": "Qual frase está correta?",
+      "options": [
+        "I is Maria",
+        "I am Maria",
+        "I are Maria",
+        "I be Maria"
+      ],
+      "correct": "I am Maria"
+    },
+    {
+      "question": "Qual frase está correta?",
+      "options": [
+        "She are happy",
+        "She am happy",
+        "She is happy",
+        "She be happy"
+      ],
+      "correct": "She is happy"
+    },
+    {
+      "question": "Como dizer 'Eu estou feliz'?",
+      "options": [
+        "I happy",
+        "I am happy",
+        "I is happy",
+        "I are happy"
+      ],
+      "correct": "I am happy"
+    },
+    {
+      "question": "Como dizer 'Eles são estudantes'?",
+      "options": [
+        "They is students",
+        "They are students",
+        "They am students",
+        "They be students"
+      ],
+      "correct": "They are students"
+    },
+    {
+      "question": "Qual frase está errada?",
+      "options": [
+        "He is a teacher",
+        "They are friends",
+        "You are happy",
+        "He are a teacher"
+      ],
+      "correct": "He are a teacher"
+    },
+    {
+      "question": "Qual é a forma correta?",
+      "options": [
+        "You am happy",
+        "You is happy",
+        "You are happy",
+        "You be happy"
+      ],
+      "correct": "You are happy"
+    },
+    {
+      "question": "Qual é o erro comum em inglês?",
+      "options": [
+        "I am 25 years old",
+        "I have 25 years",
+        "I am happy",
+        "I am a student"
+      ],
+      "correct": "I have 25 years"
+    }
+  ]
+}

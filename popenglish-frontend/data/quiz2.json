@@ -1,0 +1,57 @@
+{
+  "title": "Quiz 2: Introductions",
+  "lessonId": "lesson2",
+  "nextLesson": "lesson.html?id=lesson3",
+  "questions": [
+    {
+      "question": "Como dizer 'Meu nome é Rita' em inglês?",
+      "options": ["I name Rita","My name is Rita","I am name Rita","Me Rita"],
+      "correct": "My name is Rita"
+    },
+    {
+      "question": "Como perguntar o nome de alguém?",
+      "options": ["Who are you name?","What your name?","What's your name?","How your name?"],
+      "correct": "What's your name?"
+    },
+    {
+      "question": "Como dizer 'Eu estou bem'?",
+      "options": ["I fine","I'm fine","I am gooding","Me fine"],
+      "correct": "I'm fine"
+    },
+    {
+      "question": "Como responder educadamente 'Estou bem, obrigada(o)'?",
+      "options": ["I'm fine, thank you","I good thanks","Fine me","I'm thanks good"],
+      "correct": "I'm fine, thank you"
+    },
+    {
+      "question": "Qual é a forma correta?",
+      "options": ["I am Manuel","I Manuel","Me Manuel","I is Manuel"],
+      "correct": "I am Manuel"
+    },
+    {
+      "question": "Qual frase está correta?",
+      "options": ["My name Ana","My is name Ana","My name is Ana","Name my Ana"],
+      "correct": "My name is Ana"
+    },
+    {
+      "question": "Como dizer 'Oi! Qual é o seu nome?'",
+      "options": ["Hi! What your name?","Hi! What's your name?","Hello! Who your name?","Hi! Name you?"],
+      "correct": "Hi! What's your name?"
+    },
+    {
+      "question": "Qual frase é uma apresentação?",
+      "options": ["How are name?","I am from name","My name is Lucia","You are Lucia"],
+      "correct": "My name is Lucia"
+    },
+    {
+      "question": "Qual frase está errada?",
+      "options": ["I am Luiz","My name is Luiz","I is Luiz","I'm Luiz"],
+      "correct": "I is Luiz"
+    },
+    {
+      "question": "Como continuar uma conversa depois de se apresentar?",
+      "options": ["What's your name?","Bye","Go home","Stop talking"],
+      "correct": "What's your name?"
+    }
+  ]
+}

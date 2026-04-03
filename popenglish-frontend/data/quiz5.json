@@ -1,0 +1,107 @@
+{
+  "title": "Quiz 5: Basic Questions",
+  "lessonId": "lesson5",
+  "nextLesson": "end.html",
+  "questions": [
+    {
+      "question": "Como perguntar 'Qual é o seu nome?'",
+      "options": [
+        "What your name?",
+        "What's your name?",
+        "Who your name?",
+        "How your name?"
+      ],
+      "correct": "What's your name?"
+    },
+    {
+      "question": "Como perguntar 'Como você está?'",
+      "options": [
+        "What are you?",
+        "How are you?",
+        "Where are you?",
+        "Who are you?"
+      ],
+      "correct": "How are you?"
+    },
+    {
+      "question": "Como perguntar 'De onde você é?'",
+      "options": [
+        "Where you are from?",
+        "Where are you from?",
+        "Where you from?",
+        "From where you are?"
+      ],
+      "correct": "Where are you from?"
+    },
+    {
+      "question": "Como responder 'Eu estou bem'?",
+      "options": [
+        "I fine",
+        "I'm fine",
+        "I am gooding",
+        "Me fine"
+      ],
+      "correct": "I'm fine"
+    },
+    {
+      "question": "Como responder 'Eu sou do Brasil'?",
+      "options": [
+        "I from Brazil",
+        "I'm Brazil",
+        "I'm from Brazil",
+        "I Brazil"
+      ],
+      "correct": "I'm from Brazil"
+    },
+    {
+      "question": "Qual frase está correta?",
+      "options": [
+        "Where you are from?",
+        "Where are you from?",
+        "Where you from?",
+        "Where are from you?"
+      ],
+      "correct": "Where are you from?"
+    },
+    {
+      "question": "Qual frase está errada?",
+      "options": [
+        "What's your name?",
+        "How are you?",
+        "Where you are from?",
+        "Where are you from?"
+      ],
+      "correct": "Where you are from?"
+    },
+    {
+      "question": "Como iniciar uma conversa?",
+      "options": [
+        "What's your name?",
+        "Go away",
+        "Stop talking",
+        "Leave"
+      ],
+      "correct": "What's your name?"
+    },
+    {
+      "question": "Qual resposta faz sentido para 'How are you?'",
+      "options": [
+        "I'm Brazil",
+        "I'm fine",
+        "My name Ana",
+        "I from Brazil"
+      ],
+      "correct": "I'm fine"
+    },
+    {
+      "question": "Qual resposta faz sentido para 'Where are you from?'",
+      "options": [
+        "I'm Ana",
+        "I'm fine",
+        "I'm from Brazil",
+        "Hello"
+      ],
+      "correct": "I'm from Brazil"
+    }
+  ]
+}

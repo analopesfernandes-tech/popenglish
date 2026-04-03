@@ -5,14 +5,18 @@
       "type": "text",
       "content": "Depois de cumprimentar alguém, o próximo passo é se apresentar."
     },
-{
+    {
       "type": "text",
-      "content": "Em uma conversa em português dizemos algo como:"
+      "content": "Em português, dizemos algo como:"
+    },
+
+    {
+      "type": "spacer"
     },
 
     {
       "type": "text",
-      "content": "Oi, bom dia. Meu nome é Ana. Prazer em te conhecer."
+      "content": "<strong>Oi, meu nome é Ana. Prazer em te conhecer.</strong>"
     },
     {
       "type": "text",
@@ -20,12 +24,64 @@
     },
     {
       "type": "text",
-      "content": "Olá, bom dia. Meu nome é Ana. Como você se chama?"
+      "content": "<strong>Olá, bom dia. Meu nome é Ana. Como você se chama?</strong>"
     },
 
-     {
-      "type": "warning",
-      "content": "Erro comum: ❌ I have 25 years → ✅ I am 25 years old"
+    {
+      "type": "spacer"
+    },
+
+    {
+      "type": "text",
+      "content": "No inglês, a ideia é a mesma — mas com algumas estruturas simples."
+    },
+    {
+      "type": "text",
+      "content": "No começo, é normal usar frases prontas. Isso ajuda você a ganhar confiança."
+    },
+    {
+      "type": "text",
+      "content": "Com o tempo, você vai conseguir montar suas próprias frases naturalmente."
+    },
+
+    {
+      "type": "spacer"
+    },
+
+    {
+      "type": "text",
+      "content": "Aqui estão algumas frases essenciais para começar:"
+    },
+
+    {
+      "type": "text",
+      "content": "<strong>Hello! How are you?</strong> → Olá! Como você está?"
+    },
+    {
+      "type": "text",
+      "content": "<strong>I'm fine, thank you.</strong> → Estou bem, obrigada(o)"
+    },
+
+    {
+      "type": "spacer"
+    },
+
+    {
+      "type": "text",
+      "content": "<strong>Good morning! What's your name?</strong> → Bom dia! Qual é o seu nome?"
+    },
+    {
+      "type": "text",
+      "content": "<strong>Hi! My name is Ana. What's your name?</strong> → Oi! Meu nome é Ana. Qual é o seu nome?"
+    },
+
+    {
+      "type": "spacer"
+    },
+
+    {
+      "type": "text",
+      "content": "Agora que você já viu o básico, vamos praticar um pouco 🤓"
     },
 
     {
@@ -43,16 +99,16 @@
     },
     {
       "type": "text",
-      "content": "2. Where are you from?"
+      "content": "2. How are you?"
     },
+
     {
-      "type": "text",
-      "content": "3. What do you do?"
+      "type": "spacer"
     },
 
     {
       "type": "text",
-      "content": "Exemplo: I’m Ana. I’m from Brazil. I’m a student."
+      "content": "<strong>Exemplo:</strong> My name is Ana. I’m fine, thanks."
     }
   ]
 }

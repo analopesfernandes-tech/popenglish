@@ -41,6 +41,7 @@ fetch(`data/${quizId}.json`)
 function verificarQuiz(){
 
   let score = 0;
+  let respondidas = 0;
 
   window.quizData.questions.forEach((q, index) => {
 
@@ -52,6 +53,7 @@ function verificarQuiz(){
     });
 
     if(selecionado){
+      respondidas++;
 
       if(selecionado.value === q.correct){
         selecionado.parentElement.classList.add("correto");
@@ -70,6 +72,9 @@ function verificarQuiz(){
   });
 
   const total = window.quizData.questions.length;
+
+  // 🚨 BLOQUEIO PRINCIPAL
+
   const porcentagem = (score / total) * 100;
 
   const popup = document.getElementById("popup");

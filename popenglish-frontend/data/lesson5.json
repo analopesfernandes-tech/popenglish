@@ -1,0 +1,110 @@
+{
+  "title": "Lesson 5: Basic Questions (Perguntas Básicas)",
+  "sections": [
+    {
+      "type": "text",
+      "content": "Fazer perguntas é essencial para manter uma conversa em inglês."
+    },
+    {
+      "type": "text",
+      "content": "Com algumas perguntas simples, você já consegue interagir com outras pessoas."
+    },
+
+    {
+      "type": "spacer"
+    },
+
+    {
+      "type": "text",
+      "content": "Veja algumas das perguntas mais comuns:"
+    },
+
+    {
+      "type": "text",
+      "content": "<strong>What’s your name?</strong> → Qual é o seu nome?"
+    },
+    {
+      "type": "text",
+      "content": "<strong>How are you?</strong> → Como você está?"
+    },
+    {
+      "type": "text",
+      "content": "<strong>Where are you from?</strong> → De onde você é?"
+    },
+
+    {
+      "type": "spacer"
+    },
+
+    {
+      "type": "text",
+      "content": "Veja como responder:"
+    },
+
+    {
+      "type": "text",
+      "content": "<strong>I’m Ana</strong> → Eu sou Ana"
+    },
+    {
+      "type": "text",
+      "content": "<strong>I’m fine, thanks</strong> → Estou bem, obrigada(o)"
+    },
+    {
+      "type": "text",
+      "content": "<strong>I’m from Brazil</strong> → Eu sou do Brasil"
+    },
+
+    {
+      "type": "spacer"
+    },
+
+    {
+      "type": "warning",
+      "content": "Erro comum: ❌ Where you are from → ✅ Where are you from"
+    },
+
+    {
+      "type": "spacer"
+    },
+
+    {
+      "type": "text",
+      "content": "Essas perguntas já permitem que você comece e mantenha uma conversa simples."
+    },
+
+    {
+      "type": "spacer"
+    },
+
+    {
+      "type": "title",
+      "content": "Mini prática"
+    },
+
+    {
+      "type": "text",
+      "content": "Tente responder:"
+    },
+    {
+      "type": "text",
+      "content": "1. What’s your name?"
+    },
+    {
+      "type": "text",
+      "content": "2. Where are you from?"
+    },
+    {
+      "type": "text",
+      "content": "3. How are you?"
+    },
+
+    {
+      "type": "spacer"
+    },
+
+    {
+      "type": "text",
+      "content": "<strong>Exemplo:</strong> I’m Ana. I’m from Brazil. I’m fine."
+    }
+  ]
+}
