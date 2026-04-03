@@ -90,7 +90,7 @@ function verificarQuiz(){
     localStorage.setItem(window.quizData.lessonId + "Completed", "true");
 
     title.innerText = "🎉 Parabéns!";
-    message.innerText = `Você passou! (${score}/${total})`;
+    message.innerText = `Você passou no teste! (${score}/${total})`;
 
     nextBtn.style.display = "inline-block";
     nextBtn.onclick = () => {
