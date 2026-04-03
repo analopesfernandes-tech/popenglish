@@ -8,8 +8,8 @@ body {
 #greetings {
     display: flex;
     justify-content: center;
-    align-items:center;
-    padding: 30px 40px 30px 70px;
+    align-items: flex-start; 
+    padding: 20px;
 }
 
 .greetings {
@@ -18,7 +18,7 @@ body {
     box-shadow: 12px 12px 0 black;
     width: 90%;
     max-width: 800px;
-    padding: 40px;
+    padding: 30px;
     position: relative;
     font-size: 20px;
     font-family: system-ui, sans-serif;
@@ -83,4 +83,15 @@ h1 {
 .btn-quiz:active {
     transform: translate(4px, 4px);
     box-shadow: 2px 2px 0 black;
+}
+
+@media (max-width: 600px) {
+    .greetings {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
 }
