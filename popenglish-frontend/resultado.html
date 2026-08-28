@@ -42,7 +42,7 @@
 
                 <p class="ver-respostas">
                     Quer ver seus acertos e erros?
-                    <a href="quiz-nivelamento.html?verRespostas=true">Ver respostas</a>
+                    <a id="verRespostas" href="#">Ver respostas</a>
                 </p>
 
             </div>
@@ -52,6 +52,16 @@
     </section>
 
     <script src="resultado.js"></script>
+
+    <script>
+    const resultadoParams = new URLSearchParams(window.location.search);
+
+    const score = resultadoParams.get("score");
+    const nivel = resultadoParams.get("nivel");
+
+    document.getElementById("verRespostas").href =
+        `quiz-nivelamento.html?verRespostas=true&score=${score}&nivel=${nivel}`;
+</script>
 
 
 </body>
