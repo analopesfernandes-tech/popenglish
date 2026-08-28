@@ -25,6 +25,9 @@ const respostasCorretas = [
 const params = new URLSearchParams(window.location.search);
 const modoRevisao = params.get("verRespostas") === "true";
 
+const scoreResultado = params.get("score");
+const nivelResultado = params.get("nivel");
+
 
 /* =========================
    CARREGAR RESPOSTAS SALVAS
@@ -276,10 +279,21 @@ window.addEventListener("DOMContentLoaded", function () {
 
     if (modoRevisao) {
 
-        /* Estamos em:
-           quiz.html?verRespostas=true */
-
         mostrarRespostas();
+
+        const botaoResultado =
+            document.getElementById("botaoResultado");
+
+        if (botaoResultado && scoreResultado && nivelResultado) {
+
+            botaoResultado.onclick = function () {
+
+                window.location.href =
+                    `resultado.html?score=${scoreResultado}&nivel=${nivelResultado}`;
+
+            };
+
+        }
 
     }
 
