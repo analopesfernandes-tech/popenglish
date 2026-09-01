@@ -13,15 +13,29 @@ app.get("/", (req, res) => {
     res.send("Backend funcionando 🚀");
 });
 
-const db = mysql.createConnection(process.env.DATABASE_URL);
+/* =========================
+DATABASE
+========================= */
 
-db.connect(err => {
-    if(err){
-        console.log(err);
+const db = mysql.createPool({
+    uri: process.env.DATABASE_URL,
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0,
+    enableKeepAlive: true,
+    keepAliveInitialDelay: 0
+});
+
+// Testar conexão ao iniciar
+db.getConnection((err, connection) => {
+    if (err) {
+        console.error("Erro ao conectar ao MySQL:", err);
     } else {
         console.log("MySQL conectado");
+        connection.release();
     }
 });
+
 
 /* =========================
 REGISTER
@@ -31,7 +45,7 @@ app.post("/users/register", (req, res) => {
 
     let { nomecompleto, genero, cidade, pais, email } = req.body;
 
-    // normalizar email (IMPORTANTE)
+    // Normalizar email
     email = email.toLowerCase().trim();
 
     const sql = `
@@ -41,16 +55,17 @@ app.post("/users/register", (req, res) => {
 
     db.query(sql, [nomecompleto, genero, cidade, pais, email], (err, result) => {
 
-        if(err){
+        if (err) {
 
             // TRATAMENTO DO EMAIL DUPLICADO
-            if(err.code === "ER_DUP_ENTRY"){
+            if (err.code === "ER_DUP_ENTRY") {
                 return res.status(400).json({
                     message: "Este email já está cadastrado"
                 });
             }
 
-            console.log(err);
+            console.error(err);
+
             return res.status(500).json({
                 message: "Erro no servidor"
             });
@@ -63,6 +78,7 @@ app.post("/users/register", (req, res) => {
 
 });
 
+
 /* =========================
 LOGIN
 ========================= */
@@ -71,21 +87,25 @@ app.post("/users/login", (req, res) => {
 
     let { email } = req.body;
 
-    // NORMALIZAÇÃO 
-    
+    // Normalização
     email = email.toLowerCase().trim();
 
     const sql = "SELECT * FROM users WHERE email = ?";
 
     db.query(sql, [email], (err, result) => {
 
-        if(err){
-            console.log(err);
-            return res.status(500).json({ message: "Erro no servidor" });
+        if (err) {
+            console.error(err);
+
+            return res.status(500).json({
+                message: "Erro no servidor"
+            });
         }
 
-        if(result.length === 0){
-            return res.status(404).json({ message: "Email não encontrado" });
+        if (result.length === 0) {
+            return res.status(404).json({
+                message: "Email não encontrado"
+            });
         }
 
         res.json({
@@ -100,6 +120,7 @@ app.post("/users/login", (req, res) => {
 
 });
 
+
 /* =========================
 SERVER
 ========================= */
@@ -109,4 +130,3 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log("Servidor rodando na porta", PORT);
 });
-
